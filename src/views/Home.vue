@@ -1,18 +1,8 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <form class="questionnaire">
+    <input type="text" placeholder="Nom">
+    <input type="text" placeholder="Prénom">
+    <input type="text" placeholder="Nom de la société">
+    <router-link to="/question" tag="button">Commencer le test</router-link>
+  </form>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
-</script>
