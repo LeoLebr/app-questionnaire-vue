@@ -7,12 +7,14 @@ export default new Router({
   routes: [
     {
       path: '/',
+      alias: '/questionnaire',
       name: 'questionnaire',
-      component: () => import('./views/Home.vue')
+      component: () => import('./components/Home.vue')
     },
     {
-      path: '/question',
-      name: 'question'
+      path: '/question/:id',
+      name: 'question',
+      component: () => import('./components/Question.vue')
     }
   ]
 })
